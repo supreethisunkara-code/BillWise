@@ -1,0 +1,40 @@
+{
+  "_note": "Sample reference prices in INR, loosely modeled on CGHS/PM-JAY package-style benchmarks for common items. THESE ARE ILLUSTRATIVE PLACEHOLDERS, not verified current government rates. Replace with an actual maintained CGHS/PM-JAY rate list before production use.",
+  "room_rent_per_day": {
+    "general_ward": 1500,
+    "semi_private": 3000,
+    "private": 5000,
+    "icu": 9000
+  },
+  "consultation": {
+    "general_physician_visit": 500,
+    "specialist_visit": 800,
+    "icu_specialist_visit": 1200
+  },
+  "diagnostics": {
+    "cbc": 300,
+    "chest_xray": 400,
+    "ecg": 250,
+    "ct_scan_plain": 2500,
+    "mri_plain": 4500,
+    "ultrasound_abdomen": 1200
+  },
+  "procedures": {
+    "appendectomy": 25000,
+    "normal_delivery": 15000,
+    "cesarean_section": 30000,
+    "cataract_surgery": 15000,
+    "angioplasty_single_stent": 65000
+  },
+  "consumables_flagged_categories": [
+    "surgical gloves",
+    "syringe",
+    "cotton",
+    "gauze",
+    "cannula",
+    "IV set",
+    "face mask",
+    "PPE kit"
+  ],
+  "overcharge_threshold_multiplier": 1.5
+}

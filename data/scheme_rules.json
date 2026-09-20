@@ -1,0 +1,32 @@
+{
+  "_note": "Illustrative eligibility heuristics only. Real PM-JAY eligibility is based on SECC 2011 deprivation/occupational criteria, NOT a simple income cutoff -- a user can be below the income threshold and still not be SECC-listed. Always point users to the official portal/helpline for a definitive check.",
+  "schemes": [
+    {
+      "id": "pmjay",
+      "name": "Ayushman Bharat PM-JAY",
+      "coverage_amount_per_family_per_year": 500000,
+      "heuristic_eligibility": {
+        "max_annual_income": 250000,
+        "note": "Actual eligibility requires SECC 2011 database inclusion, not income alone."
+      },
+      "check_url": "https://pmjay.gov.in",
+      "helpline": "14555"
+    },
+    {
+      "id": "cghs",
+      "name": "Central Government Health Scheme (CGHS)",
+      "heuristic_eligibility": {
+        "employment_type": ["central_govt_employee", "central_govt_pensioner"]
+      },
+      "check_url": "https://cghs.gov.in"
+    },
+    {
+      "id": "state_generic",
+      "name": "State Health Assurance Scheme (varies by state)",
+      "heuristic_eligibility": {
+        "note": "Many states (e.g. Rajasthan Chiranjeevi Yojana, Tamil Nadu CMCHIS, Maharashtra MJPJAY) run their own top-up or standalone schemes with separate income/category criteria."
+      },
+      "check_url": "https://www.india.gov.in/topics/health-family-welfare"
+    }
+  ]
+}
