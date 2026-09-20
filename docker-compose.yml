@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  localstack:
+    image: localstack/localstack:latest
+    container_name: billwise-localstack
+    ports:
+      - "4566:4566"        # single edge port for every emulated AWS service
+    environment:
+      - SERVICES=s3,dynamodb,sqs   # only the free-tier services this project needs
+      - DEBUG=0
+      - PERSISTENCE=1             # keeps data between restarts (in ./localstack-data)
+    volumes:
+      - "./localstack-data:/var/lib/localstack"
